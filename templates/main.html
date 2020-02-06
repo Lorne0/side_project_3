@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Page</title>
+</head>
+<body>
+    <form method='post' action="{{ url_for('url_input') }}"> 
+    <p>
+        <input type='text' name='user_url' />
+    </p>
+    <p>
+        <button type='submit'>Submit</button>
+    </p>
+    </form>
+    <a href={{hash_url}} target="_blank">Hashed URL: {{hash_url}}</a>
+
+</body>
+</html>
